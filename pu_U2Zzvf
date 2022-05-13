@@ -1,0 +1,46 @@
+@startuml
+   skinparam ArrowColor #516f42
+   skinparam activityBorderColor #516f42
+   skinparam activityBackgroundColor #ffffff
+   skinparam activityDiamondBorderColor #516f42
+   skinparam activityDiamondBackgroundColor #ffffff
+   skinparam shadowing false
+
+skinparam shadowing false
+skinparam linetype ortho
+hide empty members
+left to right direction
+set namespaceSeparator \\
+
+
+abstract class \\Todo\\Shared\\Foundation\\ValueObject\\Identifier {
+}
+
+abstract class \\Todo\\Shared\\Foundation\\ValueObject\\StringValue {
+}
+
+interface \\Todo\\Task\\Command\\CreateTask\\CreateTaskCardInputPort {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskCost {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskDeadline {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskDetail extends \\Todo\\Shared\\Foundation\\ValueObject\\StringValue {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskId extends \\Todo\\Shared\\Foundation\\ValueObject\\Identifier {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskLabel {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskName extends \\Todo\\Shared\\Foundation\\ValueObject\\StringValue {
+}
+
+class \\Todo\\Task\\ValueObject\\TaskTodos {
+}
+
+@enduml
